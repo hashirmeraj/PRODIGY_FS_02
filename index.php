@@ -22,11 +22,12 @@
 
 
                 </div>
-                <div class="scoial-Icon flex text-white w-52 justify-between">
+                <div class="scoial-Icon flex text-white w-4/5 justify-between">
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-github"></i>
                 </div>
+                <div class="line w-52 border-solid border-[1px] border-gray-300 "></div>
             </div>
         </div>
         <!-- Main Content Area -->
