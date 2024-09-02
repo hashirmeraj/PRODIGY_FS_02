@@ -8,9 +8,15 @@
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+    <header>
+        <div class="container h-5 bg-black ">
+            <nav>
+                <div class="left"></div>
+                <div class="right"></div>
+            </nav>
+
+        </div>
+    </header>
 </body>
 
 </html>
