@@ -16,13 +16,17 @@
     <div class="main flex">
         <!-- Sidebar -->
         <div class="relative h-screen w-1/5 bg-black ">
-            <div class="material flex flex-col items-center">
-                <div>
+            <div class="material flex flex-col items-center pt-20">
+                <div class=" mb-8">
                     <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
 
 
                 </div>
-
+                <div class="scoial-Icon flex text-white w-52 justify-between">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
+                </div>
             </div>
         </div>
         <!-- Main Content Area -->
@@ -33,6 +37,7 @@
                     <div class="left">
                         <img src="./src/images/Nightmare Ninja.png" alt="Logo" class="h-10">
                     </div>
+
                     <div class="right flex items-center">
                         <div class="image w-[50px] h-[50px] rounded-full">
                             <img class="rounded-full"
