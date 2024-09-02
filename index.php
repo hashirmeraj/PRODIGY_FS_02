@@ -8,15 +8,13 @@
 </head>
 
 <body>
-    <header>
-        <div class="container h-5 bg-black ">
-            <nav>
-                <div class="left"></div>
-                <div class="right"></div>
-            </nav>
-
-        </div>
+    <header class=" bg-black w-full">
+        <nav class="container mx-auto flex justify-between p-2">
+            <div class="left"> <img src="./src/images/Nightmare Ninja.png" alt="" srcset=""></div>
+            <div class="right"></div>
+        </nav>
     </header>
+
 </body>
 
 </html>
