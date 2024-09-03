@@ -12,3 +12,8 @@ document.addEventListener('click', function (event) {
         dropdownMenu.classList.add('hidden');
     }
 });
+
+function Dropdown() {
+    document.querySelector('#submenu').classList.toggle('hidden');
+    document.querySelector('#arrow').classList.toggle('rotate-180');
+}

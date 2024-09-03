@@ -8,26 +8,50 @@
     <script src="./src/script/script.js"></script>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/b01bd35356.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
     <div class="main flex">
         <!-- Sidebar -->
-        <div class="relative h-screen w-1/5 bg-black ">
-            <div class="material flex flex-col items-center pt-20">
+        <div class="relative h-screen w-[15%] bg-gray-900 flex justify-center text-gray-200">
+            <div class="material flex flex-col items-center pt-20 w-4/5 ">
                 <div class=" mb-8">
                     <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
 
 
                 </div>
-                <div class="scoial-Icon flex text-white w-4/5 justify-between">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
+                <div class="scoial-Icon flex w-4/5 justify-around text-2xl text-gray-200">
+                    <i class=" fa-brands fa-facebook"></i>
+                    <i class=" fa-brands fa-linkedin"></i>
+                    <i class=" fa-brands fa-github"></i>
                 </div>
-                <div class="line w-max border-solid border-[0.5px] border-gray-300 "></div>
+                <hr class=" m-4 border-gray-700 w-[80%]">
+                <div class="item text-gray-300 w-4/5">
+
+                    <nav onclick="Dropdown()">
+                        <div class="nav-heading ">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-house mr-1"></i>
+                                <span>Dashboard</span>
+                            </div>
+                            <span>
+                                <i class="fa-solid fa-angles-up rotate-0 transition-transform duration-300" id="arrow"></i>
+                            </span>
+                        </div>
+
+                        <div class="nav-items cursor-pointer" id="submenu">
+                            <h1 class="nav-item "> Employee List</h1>
+                            <h1 class="nav-item"> Employee List</h1>
+                            <h1 class="nav-item"> Employee List</h1>
+
+                        </div>
+
+                    </nav>
+
+
+                </div>
+
+
             </div>
         </div>
         <!-- Main Content Area -->
@@ -50,15 +74,11 @@
 
                             <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow-lg">
                                 <li class="px-4 py-2 hover:bg-gray-100 flex">
-                                    <span class="material-symbols-outlined">
-                                        manage_accounts
-                                    </span>
+                                    <i class="fa-solid fa-user"></i>
                                     Profile
                                 </li>
                                 <li class="px-4 py-2 hover:bg-gray-100 flex">
-                                    <span class="material-symbols-outlined">
-                                        lock
-                                    </span>
+                                    <i class="fa-solid fa-lock"></i>
                                     Logout
                                 </li>
                             </ul>
@@ -74,6 +94,7 @@
             </div>
         </div>
     </div>
+
 </body>
 
 </html>
