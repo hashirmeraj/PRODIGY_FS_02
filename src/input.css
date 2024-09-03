@@ -2,11 +2,11 @@
 @tailwind components;
 
 .nav-heading {
-    @apply flex justify-between relative rounded-md hover:bg-gray-600 cursor-pointer duration-300 h-9 items-center
+    @apply p-2 flex justify-between relative rounded-md hover:bg-gray-700 cursor-pointer duration-300 h-9 items-center
 }
 
 .nav-item {
-    @apply flex justify-between relative rounded-md hover:bg-gray-800 cursor-pointer duration-300 h-9 items-center
+    @apply p-2 flex justify-between relative rounded-md hover:bg-gray-800 cursor-pointer duration-300 h-9 items-center
 }
 
 @tailwind utilities;

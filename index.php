@@ -14,7 +14,7 @@
     <div class="main flex">
         <!-- Sidebar -->
         <div class="relative h-screen w-[15%] bg-gray-900 flex justify-center text-gray-200">
-            <div class="material flex flex-col items-center pt-20 w-4/5 ">
+            <div class="material flex flex-col items-center pt-20  ">
                 <div class=" mb-8">
                     <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
 
@@ -25,7 +25,7 @@
                     <i class=" fa-brands fa-linkedin"></i>
                     <i class=" fa-brands fa-github"></i>
                 </div>
-                <hr class=" m-4 border-gray-700 w-[80%]">
+                <hr class=" m-4 border-gray-800  w-full">
                 <div class="item text-gray-300 w-4/5">
 
                     <nav onclick="Dropdown()">
@@ -55,7 +55,7 @@
             </div>
         </div>
         <!-- Main Content Area -->
-        <div class="flex flex-col w-4/5">
+        <div class="flex flex-col  w-[86%]">
             <!-- Header -->
             <header class="bg-gray-500 h-20 flex">
                 <nav class="container h-20 mx-auto flex justify-between items-center relative">
