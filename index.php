@@ -26,7 +26,8 @@
                     <i class=" fa-brands fa-github"></i>
                 </div>
                 <hr class=" m-4 border-gray-800  w-full">
-                <div class="item text-gray-300 w-4/5">
+
+                <div class=" text-gray-300 w-4/5">
 
                     <nav onclick="Dropdown()">
                         <div class="nav-heading ">
@@ -51,6 +52,22 @@
 
                 </div>
 
+                <hr class=" m-4 border-gray-800  w-full">
+                <div class=" text-gray-300 w-4/5">
+
+
+                    <div class="nav-heading ">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
+                            <span>Logout</span>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
 
             </div>
         </div>
