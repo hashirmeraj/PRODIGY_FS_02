@@ -9,4 +9,12 @@
     @apply p-2 flex justify-between relative rounded-md hover:bg-gray-800 cursor-pointer duration-300 h-9 items-center
 }
 
+.t-head {
+    @apply py-3 px-6 text-xs font-medium tracking-wider text-left text-gray-700 uppercase dark:text-gray-400
+}
+
+.t-data {
+    @apply py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white
+}
+
 @tailwind utilities;
