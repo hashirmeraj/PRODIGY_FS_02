@@ -27,7 +27,7 @@
                     <i class="fa-brands fa-linkedin"></i>
                     <i class="fa-brands fa-github"></i>
                 </div>
-                <div class="line w-52 border-solid border-[1px] border-gray-300 "></div>
+                <div class="line w-max border-solid border-[0.5px] border-gray-300 "></div>
             </div>
         </div>
         <!-- Main Content Area -->
