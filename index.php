@@ -163,7 +163,33 @@
 
 
                                                 </tr>
+                                                <tr>
+                                                    <td colspan="5">
+                                                        <div class="pagination flex justify-between p-2">
+                                                            <div class="total">Showing 5 out of 25</div>
+                                                            <div class="pg-no flex">
+                                                                <div>
+                                                                    <a href="http://">
+                                                                        <button type="button" class=" pr-2">Previous</button>
+                                                                    </a>
+                                                                </div>
+                                                                <div>
+                                                                    <a href="http://">
+                                                                        <button type="button" class=" pr-2">1</button>
+                                                                    </a>
+                                                                </div>
+                                                                <div>
+                                                                    <a href="http://">
+                                                                        <button type="button">Next</button>
+                                                                    </a>
+                                                                </div>
 
+
+
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
                                             </tbody>
                                         </table>
                                     </div>
