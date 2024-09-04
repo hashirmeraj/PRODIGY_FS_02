@@ -170,17 +170,17 @@
                                                             <div class="pg-no flex">
                                                                 <div class=" ">
                                                                     <a href="http://">
-                                                                        <button type="button" class=" p-1 hover:bg-slate-600 rounded-md">Previous</button>
+                                                                        <button type="button" class=" btn">Previous</button>
                                                                     </a>
                                                                 </div>
                                                                 <div>
                                                                     <a href="http://">
-                                                                        <button type="button" class=" p-1 hover:bg-slate-600 rounded-md">1</button>
+                                                                        <button type="button" class="btn">1</button>
                                                                     </a>
                                                                 </div>
                                                                 <div>
                                                                     <a href="http://">
-                                                                        <button type="button" class="p-1 hover:bg-slate-600 rounded-md">Next</button>
+                                                                        <button type="button" class="btn">Next</button>
                                                                     </a>
                                                                 </div>
 
