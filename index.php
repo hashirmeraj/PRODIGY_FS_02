@@ -47,9 +47,15 @@
                         </div>
 
                         <div class="nav-items cursor-pointer" id="submenu">
-                            <h1 class="nav-item "> Employee List</h1>
-                            <h1 class="nav-item"> Employee List</h1>
-                            <h1 class="nav-item"> Employee List</h1>
+                            <a href="./index.php">
+                                <h1 class="nav-item "> Employee List</h1>
+                            </a>
+                            <a href="./addEmp.php">
+                                <h1 class="nav-item"> Add Employee</h1>
+                            </a>
+                            <a href="http://">
+                                <h1 class="nav-item"> Employee List</h1>
+                            </a>
 
                         </div>
 
@@ -64,8 +70,10 @@
 
                     <div class="nav-heading ">
                         <div class="flex items-center">
-                            <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
-                            <span>Logout</span>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
+                                <span>Logout</span>
+                            </a>
                         </div>
 
 
@@ -97,12 +105,18 @@
 
                             <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow-lg">
                                 <li class="px-4 py-2 hover:bg-gray-100 flex items-center justify-between">
-                                    <i class="fa-solid fa-user"></i>
-                                    Profile
+                                    <a href="http://">
+                                        <i class="fa-solid fa-user"></i>
+                                        Profile
+                                    </a>
                                 </li>
+
                                 <li class="px-4 py-2 hover:bg-gray-100 flex items-center ">
+
                                     <i class="fa-solid fa-lock mr-1"></i>
-                                    <span>Logout</span>
+                                    <a href="http://">
+                                        Logout
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -118,6 +132,11 @@
                     <div class=" mt-12 ">
 
                         <div class="flex flex-col  w-[75%] ml-24">
+                            <div class="  flex justify-end mb-2">
+                                <a href="./addEmp.php">
+                                    <span class="  p-2 bg-gray-700 rounded-lg text-white cursor-pointer hover:bg-slate-600  active:bg-slate-700 ">Add Employee</span>
+                                </a>
+                            </div>
                             <div class="overflow-x-auto shadow-md sm:rounded-lg">
                                 <div class="inline-block min-w-full align-middle">
                                     <div class="overflow-hidden ">
