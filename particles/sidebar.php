@@ -28,9 +28,15 @@ echo '
                         </div>
 
                         <div class="nav-items cursor-pointer" id="submenu">
-                            <h1 class="nav-item "> Employee List</h1>
-                            <h1 class="nav-item"> Employee List</h1>
-                            <h1 class="nav-item"> Employee List</h1>
+                            <a href="./index.php">
+                                <h1 class="nav-item "> Employee List</h1>
+                            </a>
+                            <a href="./addEmp.php">
+                                <h1 class="nav-item"> Add Employee</h1>
+                            </a>
+                            <a href="http://">
+                                <h1 class="nav-item"> Employee List</h1>
+                            </a>
 
                         </div>
 
@@ -45,8 +51,10 @@ echo '
 
                     <div class="nav-heading ">
                         <div class="flex items-center">
-                            <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
-                            <span>Logout</span>
+                            <a href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
+                                <span>Logout</span>
+                            </a>
                         </div>
 
 

@@ -1,6 +1,7 @@
 <?php
+echo '<link href="./src/output.css" rel="stylesheet">';
 echo '
-        <header class="bg-gray-500 h-20 flex">
+<header class="bg-gray-500 h-20 flex">
                 <nav class="container h-20 mx-auto flex justify-between items-center relative">
                     <div class="left">
                         <img src="./src/images/Nightmare Ninja.png" alt="Logo" class="h-10">
@@ -17,12 +18,18 @@ echo '
 
                             <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow-lg">
                                 <li class="px-4 py-2 hover:bg-gray-100 flex items-center justify-between">
-                                    <i class="fa-solid fa-user"></i>
-                                    Profile
+                                    <a href="http://">
+                                        <i class="fa-solid fa-user"></i>
+                                        Profile
+                                    </a>
                                 </li>
+
                                 <li class="px-4 py-2 hover:bg-gray-100 flex items-center ">
+
                                     <i class="fa-solid fa-lock mr-1"></i>
-                                    <span>Logout</span>
+                                    <a href="http://">
+                                        Logout
+                                    </a>
                                 </li>
                             </ul>
                         </div>
