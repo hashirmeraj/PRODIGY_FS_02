@@ -93,16 +93,16 @@
                                 alt="">
                         </div>
                         <div id="dropDown" class="relative">
-                            <i id="dropdownButton" onclick="toggleDropdown()" class="fa-solid fa-sort-down select-none mt-3 w-[50px] h-[50px] rounded-full  text-red-200 cursor-pointer"></i>
+                            <i id="dropdownButton" onclick="toggleDropdown()" class="fa-solid fa-sort-down select-none mt-3 w-[50px] h-[50px] rounded-full  text-gray-700 cursor-pointer text-2xl pl-3"></i>
 
                             <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow-lg">
-                                <li class="px-4 py-2 hover:bg-gray-100 flex">
+                                <li class="px-4 py-2 hover:bg-gray-100 flex items-center justify-between">
                                     <i class="fa-solid fa-user"></i>
                                     Profile
                                 </li>
-                                <li class="px-4 py-2 hover:bg-gray-100 flex">
-                                    <i class="fa-solid fa-lock"></i>
-                                    Logout
+                                <li class="px-4 py-2 hover:bg-gray-100 flex items-center ">
+                                    <i class="fa-solid fa-lock mr-1"></i>
+                                    <span>Logout</span>
                                 </li>
                             </ul>
                         </div>
@@ -165,22 +165,22 @@
                                                 </tr>
                                                 <tr>
                                                     <td colspan="5">
-                                                        <div class="pagination flex justify-between p-2">
+                                                        <div class="pagination flex justify-between p-2 text-gray-400 items-center">
                                                             <div class="total">Showing 5 out of 25</div>
                                                             <div class="pg-no flex">
-                                                                <div>
+                                                                <div class=" ">
                                                                     <a href="http://">
-                                                                        <button type="button" class=" pr-2">Previous</button>
+                                                                        <button type="button" class=" p-1 hover:bg-slate-600 rounded-md">Previous</button>
                                                                     </a>
                                                                 </div>
                                                                 <div>
                                                                     <a href="http://">
-                                                                        <button type="button" class=" pr-2">1</button>
+                                                                        <button type="button" class=" p-1 hover:bg-slate-600 rounded-md">1</button>
                                                                     </a>
                                                                 </div>
                                                                 <div>
                                                                     <a href="http://">
-                                                                        <button type="button">Next</button>
+                                                                        <button type="button" class="p-1 hover:bg-slate-600 rounded-md">Next</button>
                                                                     </a>
                                                                 </div>
 
