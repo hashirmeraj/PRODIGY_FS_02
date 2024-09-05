@@ -10,7 +10,11 @@
 
 <body>
     <div class="main w-full mb bg-gray-800 flex  items-center flex-col ">
-        <div class=" mt-16">
+
+        <!-- Alert -->
+
+        
+        <div class=" mt-14">
             <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
         </div>
         <div class="p-4 text-xl  text-white"> Create an account to continue.</div>
@@ -61,6 +65,12 @@
 
         </div>
     </div>
+    <script>
+        document.getElementById('close').addEventListener('click', function() {
+            var alert = document.getElementById('alert-border-1');
+            alert.style.display = 'none';
+        });
+    </script>
 </body>
 
 </html>
