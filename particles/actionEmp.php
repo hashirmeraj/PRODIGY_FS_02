@@ -9,4 +9,6 @@ if (isset($_GET['action']) && $_GET['action'] == 'delete') {
         header("Location:../index.php?delete=true");
         exit();
     }
+} elseif (isset($_GET['action']) && $_GET['action'] == 'update') {
+    $empId = urldecode($_GET['id']);
 }

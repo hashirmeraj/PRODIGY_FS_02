@@ -191,7 +191,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                                         <td class="t-data"><?php echo htmlspecialchars($row['emp_country']); ?></td>
                                                         <td class="t-data"><?php echo htmlspecialchars($row['emp_phone']); ?></td>
                                                         <td class="t-data flex justify-evenly">
-                                                            <a href="./particles/actionEmp.php?action=edit&&id=<?php echo $row['emp_id']; ?>" title="Edit">
+                                                            <a href="./addEmp.php?action=edit&&id=<?php echo $row['emp_id']; ?>" title="Edit">
                                                                 <i class="fa-solid fa-pen-to-square"></i>
                                                             </a>
                                                             <a href="./particles/actionEmp.php?action=delete&&id=<?php echo $row['emp_id']; ?>" title="Delete">
