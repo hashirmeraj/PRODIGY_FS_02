@@ -23,8 +23,9 @@ if ($method == 'POST') {
             $_SESSION['adminId'] = $row['user_id'];
             $_SESSION['adminName'] = $row['user_name'];
             header("Location:../index.php");
+            exit();
         }
     }
 }
-// header("Location:../login.php?success=false&&error=" . urlencode($error));
-// exit();
+header("Location:../login.php?success=false");
+exit();
