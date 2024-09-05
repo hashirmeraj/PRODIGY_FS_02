@@ -780,8 +780,7 @@ video {
 
 @media (prefers-color-scheme: dark) {
   .error-close {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    background-color: transparent;
     --tw-text-opacity: 1;
     color: rgb(239 68 68 / var(--tw-text-opacity));
   }
@@ -846,8 +845,7 @@ video {
 
 @media (prefers-color-scheme: dark) {
   .success-close {
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    background-color: transparent;
     --tw-text-opacity: 1;
     color: rgb(34 197 94 / var(--tw-text-opacity));
   }
@@ -931,8 +929,8 @@ video {
   margin-inline-start: 0.75rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.mt-11 {
+  margin-top: 2.75rem;
 }
 
 .mt-12 {
@@ -955,8 +953,8 @@ video {
   margin-top: 0.75rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .block {

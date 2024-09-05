@@ -1,4 +1,5 @@
 <?php
+include './particles/config.php';
 session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 } else {
@@ -146,74 +147,75 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     <span class="  p-2 bg-gray-700 rounded-lg text-white cursor-pointer hover:bg-slate-600  active:bg-slate-700 ">Add Employee</span>
                                 </a>
                             </div>
+                            <?php
+
+
+                            // Determine current page and set records per page
+                            $records_per_page = 5;
+                            $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
+                            $offset = ($current_page - 1) * $records_per_page;
+
+                            // Fetch records with pagination
+                            $sql = "SELECT * FROM `employee_table` LIMIT $offset, $records_per_page";
+                            $result = $conn->query($sql);
+
+                            // Fetch total number of records
+                            $total_sql = "SELECT COUNT(*) FROM `employee_table`";
+                            $total_result = $conn->query($total_sql);
+                            $total_records = $total_result->fetch_array()[0];
+                            $total_pages = ceil($total_records / $records_per_page);
+                            ?>
+
                             <div class="overflow-x-auto shadow-md sm:rounded-lg">
                                 <div class="inline-block min-w-full align-middle">
-                                    <div class="overflow-hidden ">
+                                    <div class="overflow-hidden">
                                         <table id="myTable" class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
                                             <thead class="bg-gray-100 dark:bg-gray-700">
                                                 <tr>
-
-                                                    <th scope="col" class="t-head">
-                                                        Employee Name
-                                                    </th>
-                                                    <th scope="col" class="t-head">
-                                                        Email
-                                                    </th>
-                                                    <th scope="col" class="t-head">
-                                                        Country
-                                                    </th>
-                                                    <th scope="col" class="t-head">
-                                                        Phone
-                                                    </th>
-
-                                                    <th scope="col" class="t-head">
-                                                        Actions
-                                                    </th>
-
+                                                    <th scope="col" class="t-head">Employee Name</th>
+                                                    <th scope="col" class="t-head">Email</th>
+                                                    <th scope="col" class="t-head">Country</th>
+                                                    <th scope="col" class="t-head">Phone</th>
+                                                    <th scope="col" class="t-head">Actions</th>
                                                 </tr>
                                             </thead>
                                             <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
-                                                <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
-
-                                                    <td class="t-data">Hashir Meraj</td>
-                                                    <td class="t-data">hashirmeraj1@gmail.com</td>
-                                                    <td class="t-data">Pakistan</td>
-                                                    <td class="t-data">03202262028</td>
-                                                    <td class="t-data flex justify-evenly">
-                                                        <a href="http://" title="Edit">
-                                                            <i class="fa-solid fa-pen-to-square "></i>
-                                                        </a>
-                                                        <a href="http://" title="Delete">
-                                                            <i class="fa-solid fa-trash"></i>
-                                                        </a>
-                                                    </td>
-
-
-
-                                                </tr>
+                                                <?php while ($row = $result->fetch_assoc()): ?>
+                                                    <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
+                                                        <td class="t-data"><?php echo htmlspecialchars($row['emp_name']); ?></td>
+                                                        <td class="t-data"><?php echo htmlspecialchars($row['emp_email']); ?></td>
+                                                        <td class="t-data"><?php echo htmlspecialchars($row['emp_country']); ?></td>
+                                                        <td class="t-data"><?php echo htmlspecialchars($row['emp_phone']); ?></td>
+                                                        <td class="t-data flex justify-evenly">
+                                                            <a href="edit.php?id=<?php echo $row['emp_id']; ?>" title="Edit">
+                                                                <i class="fa-solid fa-pen-to-square"></i>
+                                                            </a>
+                                                            <a href="delete.php?id=<?php echo $row['emp_id']; ?>" title="Delete">
+                                                                <i class="fa-solid fa-trash"></i>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                <?php endwhile; ?>
                                                 <tr>
                                                     <td colspan="5">
                                                         <div class="pagination flex justify-between p-2 text-gray-400 items-center">
-                                                            <div class="total">Showing 5 out of 25</div>
+                                                            <div class="total">Showing <?php echo $offset + 1; ?> to <?php echo min($offset + $records_per_page, $total_records); ?> of <?php echo $total_records; ?></div>
                                                             <div class="pg-no flex">
-                                                                <div class=" ">
-                                                                    <a href="http://">
-                                                                        <button type="button" class=" btn">Previous</button>
+                                                                <?php if ($current_page > 1): ?>
+                                                                    <a href="?page=<?php echo $current_page - 1; ?>">
+                                                                        <button type="button" class="btn">Previous</button>
                                                                     </a>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="http://">
-                                                                        <button type="button" class="btn">1</button>
+                                                                <?php endif; ?>
+                                                                <?php for ($i = 1; $i <= $total_pages; $i++): ?>
+                                                                    <a href="?page=<?php echo $i; ?>">
+                                                                        <button type="button" class="btn"><?php echo $i; ?></button>
                                                                     </a>
-                                                                </div>
-                                                                <div>
-                                                                    <a href="http://">
+                                                                <?php endfor; ?>
+                                                                <?php if ($current_page < $total_pages): ?>
+                                                                    <a href="?page=<?php echo $current_page + 1; ?>">
                                                                         <button type="button" class="btn">Next</button>
                                                                     </a>
-                                                                </div>
-
-
-
+                                                                <?php endif; ?>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -223,6 +225,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                     </div>
                                 </div>
                             </div>
+
+
+
                         </div>
 
 

@@ -17,3 +17,8 @@ function Dropdown() {
     document.querySelector('#submenu').classList.toggle('hidden');
     document.querySelector('#arrow').classList.toggle('rotate-180');
 }
+
+document.getElementById('close').addEventListener('click', function () {
+    var alert = document.getElementById('alert-border-1');
+    alert.style.display = 'none';
+});
