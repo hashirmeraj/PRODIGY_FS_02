@@ -10,5 +10,5 @@ if (isset($_GET['action']) && $_GET['action'] == 'delete') {
         exit();
     }
 } elseif (isset($_GET['action']) && $_GET['action'] == 'update') {
-    $empId = urldecode($_GET['id']);
+    echo $empId = $_GET['id'];
 }
