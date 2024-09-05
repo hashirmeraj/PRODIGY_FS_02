@@ -1,4 +1,10 @@
 <?php
+session_start();
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+} else {
+    header("Location:./login.php");
+    exit();
+}
 $error = false;
 $success = false;
 if (isset($_GET['success']) && $_GET['success'] == "false") {
@@ -92,25 +98,25 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
                                                 <div class="grid grid-cols-6 gap-6">
                                                     <div class="col-span-6 sm:col-span-6">
                                                         <label for="first_name" class="label">Full name</label>
-                                                        <input required type="text" name="name" id="first_name" autocomplete="given-name" class="emp-input">
+                                                        <input required type="text" name="name" placeholder="Name" autocomplete="given-name" class="emp-input">
                                                     </div>
                                                     <div class="col-span-6 sm:col-span-3">
                                                         <label for="email_address" class="label">Email address</label>
-                                                        <input required type="email" name="email" id="email_address" autocomplete="email" class="emp-input">
+                                                        <input required type="email" name="email" id="email_address" placeholder="Email" autocomplete="email" class="emp-input">
                                                     </div>
                                                     <div class="col-span-6 sm:col-span-3">
                                                         <label for="phone" class="label">Phone Number</label>
-                                                        <input required type="number" name="Phone" autocomplete="given-name" class="emp-input" min="6">
+                                                        <input required type="number" name="Phone" autocomplete="given-name" class="emp-input" min="6" placeholder="Phone">
                                                     </div>
 
                                                     <div class="col-span-6">
                                                         <label for="street_address" class="label">Street address</label>
-                                                        <input required type="text" name="street" id="street_address" autocomplete="street-address" class="emp-input">
+                                                        <input required type="text" name="street" id="street_address" autocomplete="street-address" class="emp-input" placeholder="Street Adress">
                                                     </div>
 
                                                     <div class="col-span-6 sm:col-span-6 lg:col-span-2">
                                                         <label for="country" class="label">Country</label>
-                                                        <input required type="text" name="country" id="city" class="emp-input">
+                                                        <input required type="text" name="country" id="city" class="emp-input" placeholder="Country">
                                                     </div>
 
 

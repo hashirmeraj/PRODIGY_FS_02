@@ -79,7 +79,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
                     <div class="nav-heading ">
                         <div class="flex items-center">
-                            <a href="#">
+                            <a href="./particles/logout.php">
                                 <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
                                 <span>Logout</span>
                             </a>
@@ -124,7 +124,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <li class="px-4 py-2 hover:bg-gray-100 flex items-center ">
 
                                     <i class="fa-solid fa-lock mr-1"></i>
-                                    <a href="http://">
+                                    <a href="./particles/logout.php">
                                         Logout
                                     </a>
                                 </li>
@@ -142,10 +142,14 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                     <div class=" mt-12 ">
 
                         <div class="flex flex-col  w-[75%] ml-24">
-                            <div class="  flex justify-end mb-2">
+                            <div class="  flex items-center justify-between mb-2">
                                 <a href="./addEmp.php">
                                     <span class="  p-2 bg-gray-700 rounded-lg text-white cursor-pointer hover:bg-slate-600  active:bg-slate-700 ">Add Employee</span>
                                 </a>
+                                <form action="" method="get" class="flex">
+                                    <input type="search" class=" emp-input " placeholder="Search...">
+                                    <button type="submit" class=" ml-2 p-2 bg-gray-700 rounded-lg text-white cursor-pointer hover:bg-slate-600  active:bg-slate-700 ">Search</button>
+                                </form>
                             </div>
                             <?php
 
@@ -166,7 +170,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             $total_pages = ceil($total_records / $records_per_page);
                             ?>
 
-                            <div class="overflow-x-auto shadow-md sm:rounded-lg">
+                            <div class=" overflow-x-auto shadow-md sm:rounded-lg">
                                 <div class="inline-block min-w-full align-middle">
                                     <div class="overflow-hidden">
                                         <table id="myTable" class="min-w-full divide-y divide-gray-200 table-fixed dark:divide-gray-700">
