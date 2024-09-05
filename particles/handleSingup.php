@@ -16,7 +16,7 @@ if ($method == 'POST') {
 
     // checking email exit or not
     if ($emailExist > 0) {
-        $error = 'Email Already Exist';
+        $error = 'email';
     } else {
 
         if ($password == $ConfPassword) {
@@ -24,11 +24,11 @@ if ($method == 'POST') {
             $hash = password_hash($password, PASSWORD_DEFAULT);
             $sql = "INSERT INTO `users1` (`user_name`, `user_email`, `user_password`, `date_time`) VALUES ('$username', '$useremail', '$hash', current_timestamp())";
             $result = mysqli_query($conn, $sql);
-            header("Location:../singup.php?success=true");
+            header("Location:../login.php?success=true");
             exit();
         } else {
 
-            $error = 'Password Does not match';
+            $error = 'password';
         }
     }
 }
