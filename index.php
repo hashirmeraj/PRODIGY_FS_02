@@ -140,7 +140,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 </nav>
             </header>
             <!-- New Div for Main Content -->
-            <div class="content bg-slate-400 flex-grow ">
+            <div class="conten bg-gray-900 flex-grow ">
 
                 <div class=" main-area">
                     <!-- component -->
