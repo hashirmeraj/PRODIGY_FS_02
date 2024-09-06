@@ -121,12 +121,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             <i id="dropdownButton" onclick="toggleDropdown()" class="fa-solid fa-sort-down select-none mt-3 w-[50px] h-[50px] rounded-full  text-gray-700 cursor-pointer text-2xl pl-3"></i>
 
                             <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow-lg">
-                                <li class="px-4 py-2 hover:bg-gray-100 flex items-center justify-between">
-                                    <a href="http://">
-                                        <i class="fa-solid fa-user"></i>
-                                        Profile
-                                    </a>
-                                </li>
+
 
                                 <li class="px-4 py-2 hover:bg-gray-100 flex items-center ">
 
