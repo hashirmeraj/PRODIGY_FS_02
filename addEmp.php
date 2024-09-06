@@ -1,4 +1,6 @@
-<?
+<?php
+$error = false;
+$success = false;
 include './particles/config.php';
 session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
@@ -6,8 +8,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     header("Location:./login.php");
     exit();
 }
-$error = false;
-$success = false;
+
 if (isset($_GET['success']) && $_GET['success'] == "false") {
     $error = true;
 } elseif (isset($_GET['success']) && $_GET['success'] == "true") {
@@ -89,7 +90,6 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
 
                     <!-- component -->
                     <?php
-                    include './particles/config.php';
                     if (isset($_GET['action']) &&  $_GET['action'] == 'edit') {
 
                         $empId = $_GET['id'];
