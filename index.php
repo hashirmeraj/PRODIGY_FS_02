@@ -28,7 +28,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <body>
     <div class="main flex">
         <!-- Sidebar -->
-        <div class="relative h-screen w-[15%] bg-black flex justify-center text-gray-200">
+        <div class="relative h-screen w-[15%] bg-gray-900 flex justify-center text-gray-200 border-r-[1px] border-gray-500">
             <div class="material flex flex-col items-center pt-20  ">
                 <div class=" mb-8">
                     <a href="./index.php">
@@ -105,7 +105,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         <!-- Main Content Area -->
         <div class="flex flex-col  w-[86%]">
             <!-- Header -->
-            <header class="bg-gray-500 h-20 flex">
+            <header class=" bg-gray-900 h-20 flex">
                 <nav class="container h-20 mx-auto flex justify-between items-center relative">
                     <div class="left">
                         <img src="./src/images/Nightmare Ninja.png" alt="Logo" class="h-10">
@@ -141,7 +141,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 </nav>
             </header>
             <!-- New Div for Main Content -->
-            <div class="conten bg-gray-900 flex-grow ">
+            <div class="conten bg-gray-800 flex-grow ">
 
                 <div class=" main-area">
                     <!-- component -->
@@ -212,7 +212,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                                     <th scope="col" class="t-head">Actions</th>
                                                 </tr>
                                             </thead>
-                                            <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-800 dark:divide-gray-700">
+                                            <tbody class="bg-white divide-y divide-gray-200 dark:bg-gray-900 dark:divide-gray-700">
                                                 <?php while ($row = $result->fetch_assoc()): ?>
                                                     <tr class="hover:bg-gray-100 dark:hover:bg-gray-700">
                                                         <td class="t-data"><?php echo htmlspecialchars($row['emp_name']); ?></td>
