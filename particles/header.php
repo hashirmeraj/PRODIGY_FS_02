@@ -1,5 +1,5 @@
 <?php
-echo '<link href="./src/output.css" rel="stylesheet">';
+echo '<link href="./src/styles.css" rel="stylesheet">';
 echo '
 <header class="bg-gray-500 h-20 flex">
                 <nav class="container h-20 mx-auto flex justify-between items-center relative">

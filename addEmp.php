@@ -28,7 +28,7 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/styles.css" rel="stylesheet">
     <script src="./src/script/script.js"></script>
     <script src="//cdn.datatables.net/2.1.5/js/dataTables.min.js"></script>
     <link rel="stylesheet" href="//cdn.datatables.net/2.1.5/css/dataTables.dataTables.min.css">

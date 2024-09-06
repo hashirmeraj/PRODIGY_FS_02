@@ -16,7 +16,7 @@ if (isset($_GET['success']) && $_GET['success'] == 'false') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singup</title>
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/styles.css">
 </head>
 
 <body>
