@@ -146,7 +146,7 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
                                     <div class="mt-6 md:mt-0 md:col-span-2">
                                         <form action="./particles/actionEmp.php?action=update&&id=' . $empId . '"   method="POST">
                                             <div class="shadow overflow-hidden sm:rounded-md">
-                                                <div class="px-4 py-5 bg-gray-700 sm:p-6 ">
+                                                <div class="px-4 py-5 bg-gray-900 sm:p-6 ">
                                                     <div class="grid grid-cols-6 gap-6">
                                                         <div class="col-span-6 sm:col-span-6">
                                                             <label for="first_name" class="label">Edit Name</label>
