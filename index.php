@@ -28,7 +28,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 <body>
     <div class="main flex">
         <!-- Sidebar -->
-        <div class="relative h-screen w-[15%] bg-gray-900 flex justify-center text-gray-200">
+        <div class="relative h-screen w-[15%] bg-black flex justify-center text-gray-200">
             <div class="material flex flex-col items-center pt-20  ">
                 <div class=" mb-8">
                     <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
