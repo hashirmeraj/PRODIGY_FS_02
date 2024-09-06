@@ -36,9 +36,15 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 
                 </div>
                 <div class="scoial-Icon flex w-4/5 justify-around text-2xl text-gray-200">
-                    <i class=" fa-brands fa-facebook"></i>
-                    <i class=" fa-brands fa-linkedin"></i>
-                    <i class=" fa-brands fa-github"></i>
+                    <a href="https://www.facebook.com/hashirmerajofficial" target="_blank">
+                        <i class=" fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hashir-meraj-dev1/" target="_blank">
+                        <i class=" fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/hashirmeraj" target="_blank">
+                        <i class=" fa-brands fa-github"></i>
+                    </a>
                 </div>
                 <hr class=" m-4 border-gray-800  w-full">
 
@@ -263,9 +269,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
             </div>
         </div>
     </div>
-    <script>
 
-    </script>
+    <script src="./src/script/script.js"></script>
 </body>
 
 </html>

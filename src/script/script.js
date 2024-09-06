@@ -18,7 +18,22 @@ function Dropdown() {
     document.querySelector('#arrow').classList.toggle('rotate-180');
 }
 
-document.getElementById('close').addEventListener('click', function () {
-    var alert = document.getElementById('alert-border-1');
-    alert.style.display = 'none';
+// script.js
+
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Select the first element with the 'close' class
+    var closeButton = document.querySelector('.close');
+
+    if (closeButton) {
+        closeButton.addEventListener('click', function () {
+            // Select the first element with the 'alert-border-1' class
+            var alert = document.querySelector('.alert-border-1');
+
+            if (alert) {
+                alert.style.display = 'none';
+            }
+        });
+    }
 });
