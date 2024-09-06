@@ -53,7 +53,7 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
             include './particles/header.php';
             ?>
             <!-- New Div for Main Content -->
-            <div class="content bg-slate-400 flex-grow ">
+            <div class="content  bg-gray-800 flex-grow ">
                 <!-- Alert -->
 
                 <?php
