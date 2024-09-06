@@ -31,8 +31,9 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         <div class="relative h-screen w-[15%] bg-black flex justify-center text-gray-200">
             <div class="material flex flex-col items-center pt-20  ">
                 <div class=" mb-8">
-                    <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
-
+                    <a href="./index.php">
+                        <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
+                    </a>
 
                 </div>
                 <div class="scoial-Icon flex w-4/5 justify-around text-2xl text-gray-200">
