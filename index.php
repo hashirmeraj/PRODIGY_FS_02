@@ -146,8 +146,8 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 <a href="./addEmp.php">
                                     <span class="  p-2 bg-gray-700 rounded-lg text-white cursor-pointer hover:bg-slate-600  active:bg-slate-700 ">Add Employee</span>
                                 </a>
-                                <form action="" method="get" class="flex">
-                                    <input type="search" class=" emp-input " placeholder="Search...">
+                                <form action="./index.php?search" method="get" class="flex">
+                                    <input name="search" type="search" class=" emp-input " placeholder="Search...">
                                     <button type="submit" class=" ml-2 p-2 bg-gray-700 rounded-lg text-white cursor-pointer hover:bg-slate-600  active:bg-slate-700 ">Search</button>
                                 </form>
                             </div>
@@ -159,16 +159,38 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                             $current_page = isset($_GET['page']) ? (int)$_GET['page'] : 1;
                             $offset = ($current_page - 1) * $records_per_page;
 
+
+                            // Determine if a search term is provided
+                            $searchTerm = isset($_GET['search']) ? mysqli_real_escape_string($conn, $_GET['search']) : '';
+
+
+                            // Build SQL query based on whether a search term is provided
+                            if ($searchTerm) {
+                                $sql = "SELECT * FROM `employee_table`
+                                WHERE MATCH (`emp_name`, `emp_email`, `emp_phone`, `emp_country`)
+                                AGAINST ('$searchTerm' IN BOOLEAN MODE)
+                                LIMIT $offset, $records_per_page";
+                            } else {
+                                $sql = "SELECT * FROM `employee_table`
+                                LIMIT $offset, $records_per_page";
+                            }
+
                             // Fetch records with pagination
-                            $sql = "SELECT * FROM `employee_table` LIMIT $offset, $records_per_page";
                             $result = $conn->query($sql);
 
-                            // Fetch total number of records
-                            $total_sql = "SELECT COUNT(*) FROM `employee_table`";
+                            // Fetch total number of records based on search term
+                            if ($searchTerm) {
+                                $total_sql = "SELECT COUNT(*) FROM `employee_table`
+                                WHERE MATCH (`emp_name`, `emp_email`, `emp_phone`, `emp_country`)
+                                AGAINST ('$searchTerm' IN BOOLEAN MODE)";
+                            } else {
+                                $total_sql = "SELECT COUNT(*) FROM `employee_table`";
+                            }
                             $total_result = $conn->query($total_sql);
                             $total_records = $total_result->fetch_array()[0];
                             $total_pages = ceil($total_records / $records_per_page);
                             ?>
+
 
                             <div class=" overflow-x-auto shadow-md sm:rounded-lg">
                                 <div class="inline-block min-w-full align-middle">
