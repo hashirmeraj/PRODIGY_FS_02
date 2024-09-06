@@ -38,13 +38,13 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 </div>
                 <div class="scoial-Icon flex w-4/5 justify-around text-2xl text-gray-200">
                     <a href="https://www.facebook.com/hashirmerajofficial" target="_blank">
-                        <i class=" fa-brands fa-facebook"></i>
+                        <i class=" fa-brands fa-facebook hover:text-gray-500"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/hashir-meraj-dev1/" target="_blank">
-                        <i class=" fa-brands fa-linkedin"></i>
+                        <i class=" fa-brands fa-linkedin hover:text-gray-500"></i>
                     </a>
                     <a href="https://github.com/hashirmeraj" target="_blank">
-                        <i class=" fa-brands fa-github"></i>
+                        <i class=" fa-brands fa-github hover:text-gray-500"></i>
                     </a>
                 </div>
                 <hr class=" m-4 border-gray-800  w-full">
@@ -52,29 +52,25 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                 <div class=" text-gray-300 w-4/5">
 
                     <nav onclick="Dropdown()">
-                        <div class="nav-heading ">
+                        <div class="nav-heading">
                             <div class="flex items-center">
                                 <i class="fa-solid fa-house mr-2"></i>
                                 <span>Dashboard</span>
                             </div>
                             <span>
-                                <i class="fa-solid fa-angles-up rotate-0 transition-transform duration-300" id="arrow"></i>
+                                <i class="fa-solid fa-angles-up rotate-180 transition-transform duration-300" id="arrow"></i>
                             </span>
                         </div>
 
-                        <div class="nav-items cursor-pointer" id="submenu">
+                        <div class="nav-items cursor-pointer hidden" id="submenu">
                             <a href="./index.php">
-                                <h1 class="nav-item "> Employee List</h1>
+                                <h1 class="nav-item">Employee List</h1>
                             </a>
                             <a href="./addEmp.php">
-                                <h1 class="nav-item"> Add Employee</h1>
-                            </a>
-                            <a href="http://">
-                                <h1 class="nav-item"> Employee List</h1>
+                                <h1 class="nav-item">Add Employee</h1>
                             </a>
 
                         </div>
-
                     </nav>
 
 
@@ -118,15 +114,16 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
                                 alt="">
                         </div>
                         <div id="dropDown" class="relative">
-                            <i id="dropdownButton" onclick="toggleDropdown()" class="fa-solid fa-sort-down select-none mt-3 w-[50px] h-[50px] rounded-full  text-gray-700 cursor-pointer text-2xl pl-3"></i>
+                            <i id="dropdownButton" onclick="toggleDropdown()" class="fa-solid fa-sort-down select-none mt-3 w-[50px] h-[50px] rounded-full  text-gray-500 cursor-pointer text-2xl pl-3"></i>
 
-                            <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 bg-white border rounded shadow-lg">
+                            <ul id="dropDownMenu" class="hidden absolute right-0 mt-2 text-white border rounded shadow-lg">
 
 
-                                <li class="px-4 py-2 hover:bg-gray-100 flex items-center ">
+                                <li class="px-4 py-2 bg-gray-700 hover:bg-gray-500  ">
 
-                                    <i class="fa-solid fa-lock mr-1"></i>
-                                    <a href="./particles/logout.php">
+
+                                    <a href="./particles/logout.php" class="flex items-center">
+                                        <i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>
                                         Logout
                                     </a>
                                 </li>
