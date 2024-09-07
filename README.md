@@ -50,7 +50,8 @@ $dbname = 'employee_curd';
 ### 4. Run the Project
 
 Move the project files to the XAMPP or WAMP server directory (htdocs folder).
-Start the server, and in your browser, navigate to http://localhost/your-project-directory.
+
+Start the server, and in your browser, navigate to ``` http://localhost/your-project-directory.```
 
 ##Contributing
 
