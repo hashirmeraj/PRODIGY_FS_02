@@ -53,4 +53,5 @@ Move the project files to the XAMPP or WAMP server directory (htdocs folder).
 Start the server, and in your browser, navigate to http://localhost/your-project-directory.
 
 ##Contributing
+
 Feel free to fork this project, submit issues, or open pull requests. Any contributions are welcome!
