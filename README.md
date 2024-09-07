@@ -26,6 +26,7 @@ Clone the repository from GitHub to your local system:
 
 ```bash
 git clone https://github.com/hashirmeraj/employee-management-system.git
+```
 
 ### 2. Set Up the Database
 
