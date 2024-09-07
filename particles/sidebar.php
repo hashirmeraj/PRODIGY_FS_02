@@ -5,7 +5,7 @@ echo '
             <div class="material flex flex-col items-center pt-20  ">
                 <div class=" mb-8">
                     <a href="./index.php">
-                        <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
+                        <img src="./src/images/logo.png" alt="" srcset="">
                     </a>
 
                 </div>

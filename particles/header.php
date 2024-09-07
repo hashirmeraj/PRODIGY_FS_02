@@ -3,7 +3,7 @@ echo '
             <header class=" bg-gray-900 h-20 flex">
                 <nav class="container h-20 mx-auto flex justify-between items-center relative">
                     <div class="left">
-                        <img src="./src/images/Nightmare Ninja.png" alt="Logo" class="h-10">
+                        <img src="./src/images/logo.png" alt="Logo" class="h-10">
                     </div>
 
                     <div class="right flex items-center">
