@@ -19,7 +19,7 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     <link rel="stylesheet" href="//cdn.datatables.net/2.1.5/css/dataTables.dataTables.min.css">
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/b01bd35356.js" crossorigin="anonymous"></script>
-    <!-- Theeeeeeee -->
+
 
 
 
