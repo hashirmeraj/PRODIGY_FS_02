@@ -65,7 +65,7 @@ if (isset($_GET['success']) && $_GET['success'] == 'false') {
 
 
         <div class=" mt-14">
-            <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
+            <img src="./src/images/logo.png" alt="" srcset="">
         </div>
         <div class="p-4 text-xl  text-white"> Create an account to continue.</div>
         <div class="w-full max-w-xs mb-7">
@@ -80,7 +80,7 @@ if (isset($_GET['success']) && $_GET['success'] == 'false') {
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="useremail">
                         Email
                     </label>
-                    <input required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="useremail" type="email" placeholder="Username">
+                    <input required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="useremail" type="email" placeholder="Email">
                 </div>
                 <div class="mb-6">
                     <label class="block text-gray-700 text-sm font-bold mb-2" for="password">

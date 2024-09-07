@@ -59,7 +59,7 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
         }
         ?>
         <div class=" mt-16">
-            <img src="./src/images/Nightmare Ninja.png" alt="" srcset="">
+            <img src="./src/images/logo.png" alt="" srcset="">
         </div>
         <div class="p-4 text-xl  text-white"> Log in to access your account.</div>
         <div class="w-full max-w-xs">
@@ -94,25 +94,7 @@ if (isset($_GET['success']) && $_GET['success'] == "false") {
 
         </div>
     </div>
-    <script>
-        // // script.js
 
-        // document.addEventListener('DOMContentLoaded', function() {
-        //     // Select the first element with the 'close' class
-        //     var closeButton = document.querySelector('.close');
-
-        //     if (closeButton) {
-        //         closeButton.addEventListener('click', function() {
-        //             // Select the first element with the 'alert-border-1' class
-        //             var alert = document.querySelector('.alert-border-1');
-
-        //             if (alert) {
-        //                 alert.style.display = 'none';
-        //             }
-        //         });
-        //     }
-        // });
-    </script>
     <script src="./src/script/script.js"></script>
 </body>
 
